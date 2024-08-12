@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap" rel="stylesheet">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <a href="https://tahsun1462.github.io/HOME/"><button class="home"><ion-icon name="home"></ion-icon></button></a>
+    <div class="container">
+      <select id="list">
+        <option value="sp" onchange="changeValue()">Simple Interest</option>
+        <option value="cp" onchange="changeValue()">Compound Interest</option>
+      </select><br>
+      <input type="number" id="P" placeholder="মূলধন"/>
+      <input type="number" id="r" placeholder="মূনাফার হার"/>
+      <input type="number" id="n" placeholder="সময়কাল (বছর) "/><br>
+      <button onclick="execute()">Calculate</button><br>
+      <input type="number" id="A" placeholder="মূনাফা-আসল" readonly=""/>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
